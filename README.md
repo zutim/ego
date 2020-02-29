@@ -171,7 +171,7 @@ err := apollo.Init(apollo.Conf{
 ```go
 // trigger mns init event
 // make sure config is not empty 
-app.EventDispather().Trigger(app.MNSClientInitEvent, nil)
+app.EventDispatcher().Trigger(app.MNSClientInitEvent, nil)
 mns := app.Mns()
 ```
 
@@ -180,7 +180,7 @@ mns := app.Mns()
 ```go
 // trigger mysql connect event
 // make sure config is not empty 
-app.EventDispather().Trigger(app.MysqlConnectEvent, nil)
+app.EventDispatcher().Trigger(app.MysqlConnectEvent, nil)
 db := app.Mysql() 
 // .. curd
 ```
